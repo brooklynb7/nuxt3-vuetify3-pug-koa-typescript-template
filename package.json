@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "nuxt build",
+    "build:server": "tsc -p tsconfig-server.json",
+    "dev:client": "nuxt dev",
+    "dev:server": "ts-node-esm server/index.ts",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/http-proxy": "^1.17.10",
+    "@types/koa": "^2.13.5",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/koa-compress": "^4.0.3",
+    "@types/koa-logger": "^3.1.2",
+    "@types/koa-mount": "^4.0.2",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-session": "^5.10.6",
+    "@types/koa-static": "^4.0.2",
+    "@types/lodash": "^4.14.191",
+    "http-proxy": "^1.18.1",
+    "nuxt": "^3.2.2",
+    "pug": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vuetify": "^3.1.8"
+  },
+  "dependencies": {
+    "axios": "^1.3.4",
+    "chalk": "^5.2.0",
+    "chatgpt": "^5.0.5",
+    "https-proxy-agent": "^5.0.1",
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compress": "^5.1.0",
+    "koa-logger": "^3.2.1",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^12.0.0",
+    "koa-session": "^6.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "node-fetch": "^3.3.0",
+    "openai": "^3.2.1"
+  }
+}
